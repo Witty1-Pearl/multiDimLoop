@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Task</title>
+</head>
+<body>
+    <h1>Multi-dimensional Arrays</h1>
+
+
+    <script>
+       let num = [
+            [1, 2, 1, 24],
+            [8, 11, 9, 4],
+            [7, 0, 7, 27],
+            [7, 4, 28, 14],
+            [3, 10, 26, 7]
+        ];
+        document.write("<table border='1'>");
+
+        document.write("<tr><th>row0</th><th>row1</th><th>row2</th><th>row3</th></tr>");
+
+
+        for (let i = 0; i < num.length; i++) {
+			document.write("<tr>");
+			for (let k = 0; k < num[i].length; k++) {
+				document.write(`<td>${num[i][k]}</td>`);
+			}
+			document.write("</tr>");
+		}
+		document.write("</table>");
+
+        document.write()
+
+    </script>
+</body>
+</html>
